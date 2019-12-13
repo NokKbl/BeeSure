@@ -23,6 +23,18 @@ changeDarkTheme = dark => {
       card[i].classList.add("card-dark");
     }
 
+    const modal = document.querySelectorAll(".modal-content");
+    for (let i = 0; i < modal.length; i++) {
+      modal[i].classList.remove("bg-light");
+      modal[i].classList.add("bg-dark");
+      modal[i].classList.add("text-white");
+    }
+
+    const table = document.querySelectorAll(".table");
+    for (let i = 0; i < table.length; i++) {
+      table[i].classList.add("table-dark");
+    }
+
     container.classList.remove("container-light");
     container.classList.add("container-dark");
   } else {
@@ -47,7 +59,23 @@ changeDarkTheme = dark => {
       card[i].classList.add("card-light");
     }
 
+    const modal = document.querySelectorAll(".modal-content");
+    for (let i = 0; i < modal.length; i++) {
+      modal[i].classList.remove("bg-dark");
+      modal[i].classList.remove("text-white");
+      modal[i].classList.add("bg-light");
+    }
+
+    const table = document.querySelectorAll(".table");
+    for (let i = 0; i < table.length; i++) {
+      table[i].classList.remove("table-dark");
+    }
+
     container.classList.remove("container-dark");
     container.classList.add("container-light");
   }
+};
+
+openInsuranceModal = insuranceName => {
+  $(`#${insuranceName}Modal`).modal("show");
 };
