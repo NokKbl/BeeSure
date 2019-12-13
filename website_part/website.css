@@ -63,10 +63,7 @@ body {
   opacity: 0.3;
 }
 
-.bookedButton:hover {
+.bookButton:hover {
   color: #dfcc18;
+  opacity: 1;
 }
-
-/* .bookButton:hover {
-  color: palevioletred;
-} */
