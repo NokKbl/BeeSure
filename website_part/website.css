@@ -46,25 +46,27 @@ body {
 }
 
 .bookedStatus {
-  color: palevioletred;
+  color: 242424;
 }
 
 .bookStatus {
   color: black;
+  opacity: 0.3;
 }
 
 .bookedButton {
-  color: palevioletred;
+  color: #242424;
 }
 
 .bookButton {
   color: black;
+  opacity: 0.3;
 }
 
 .bookedButton:hover {
-  color: black;
+  color: #dfcc18;
 }
 
-.bookButton:hover {
+/* .bookButton:hover {
   color: palevioletred;
-}
+} */

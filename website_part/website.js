@@ -72,7 +72,7 @@ $(document).ready(function() {
           </div>
           <div class="col-9">
             <div class="card-body">
-              <h4 class="card-title">${insurance.title} <i id="${insurance.id}BookStatusIcon" class="fa fa-home ${bookmarkClass}Status"> </i></h4>
+              <h4 class="card-title">${insurance.title} <i id="${insurance.id}BookStatusIcon" class="fa fa-bookmark ${bookmarkClass}Status"> </i></h4>
               <div class="card-text">
               <button type="button" class="btn btn-default" aria-label="Left Align">
               </div>
@@ -107,7 +107,7 @@ $(document).ready(function() {
         </button>
       </div>
       <div class="modal-body">
-        <h2 class="text-center">Detail         <i id="${insurance.id}BookButton" onClick="bookmark('${insurance.id}')" class="fa fa-home ${bookmarkClass}Button float-right"> </i></h2>
+        <h2 class="text-center">Detail         <i id="${insurance.id}BookButton" onClick="bookmark('${insurance.id}')" class="fa fa-bookmark ${bookmarkClass}Button float-right"> </i></h2>
 
         <table class="table table-bordered">
           <thead>
