@@ -3,6 +3,8 @@ let mockUser = {
   bookmark: ["tmb1Insurance"]
 };
 
+let currentTheme = "light";
+
 const mockData = [
   {
     title: "TMB house insurance package 1",
@@ -13,6 +15,82 @@ const mockData = [
     insurancePolicy: [
       "1,000,000",
       "500,000",
+      "500,000",
+      "100,000",
+      "100,000",
+      "ไม่เกิน 3,000 ต่อชิ้น <br />สูงสุด 30,000 ต่อปี",
+      "สูงสุด 10,000 ต่อปี",
+      "100,000",
+      "100,000",
+      "100,000"
+    ]
+  },
+  {
+    title: "TMB house insurance package 2",
+    img: "logo_tmb.png",
+    id: "tmb2Insurance",
+    webUrl: "https://www.tmbbank.com/insurance/tmb-home-safe.html",
+    insurancePremiumPerYear: "2,499",
+    insurancePolicy: [
+      "500,000",
+      "ไม่คุ้มครอง",
+      "500,000",
+      "100,000",
+      "100,000",
+      "ไม่เกิน 3,000 ต่อชิ้น <br />สูงสุด 30,000 ต่อปี",
+      "สูงสุด 10,000 ต่อปี",
+      "100,000",
+      "100,000",
+      "100,000"
+    ]
+  },
+  {
+    title: "TMB house insurance package 2",
+    img: "logo_tmb.png",
+    id: "tmb2Insurance",
+    webUrl: "https://www.tmbbank.com/insurance/tmb-home-safe.html",
+    insurancePremiumPerYear: "2,499",
+    insurancePolicy: [
+      "500,000",
+      "ไม่คุ้มครอง",
+      "500,000",
+      "100,000",
+      "100,000",
+      "ไม่เกิน 3,000 ต่อชิ้น <br />สูงสุด 30,000 ต่อปี",
+      "สูงสุด 10,000 ต่อปี",
+      "100,000",
+      "100,000",
+      "100,000"
+    ]
+  },
+  {
+    title: "TMB house insurance package 2",
+    img: "logo_tmb.png",
+    id: "tmb2Insurance",
+    webUrl: "https://www.tmbbank.com/insurance/tmb-home-safe.html",
+    insurancePremiumPerYear: "2,499",
+    insurancePolicy: [
+      "500,000",
+      "ไม่คุ้มครอง",
+      "500,000",
+      "100,000",
+      "100,000",
+      "ไม่เกิน 3,000 ต่อชิ้น <br />สูงสุด 30,000 ต่อปี",
+      "สูงสุด 10,000 ต่อปี",
+      "100,000",
+      "100,000",
+      "100,000"
+    ]
+  },
+  {
+    title: "TMB house insurance package 2",
+    img: "logo_tmb.png",
+    id: "tmb2Insurance",
+    webUrl: "https://www.tmbbank.com/insurance/tmb-home-safe.html",
+    insurancePremiumPerYear: "2,499",
+    insurancePolicy: [
+      "500,000",
+      "ไม่คุ้มครอง",
       "500,000",
       "100,000",
       "100,000",
@@ -72,7 +150,7 @@ $(document).ready(function() {
           </div>
           <div class="col-9">
             <div class="card-body">
-              <h4 class="card-title">${insurance.title} <i id="${insurance.id}BookStatusIcon" class="fa fa-bookmark ${bookmarkClass}Status"> </i></h4>
+              <h4 class="card-title">${insurance.title} <i id="${insurance.id}BookStatusIcon" class="fa fa-bookmark ${bookmarkClass}Status bookmark-color-light"> </i></h4>
               <div class="card-text">
               <button type="button" class="btn btn-default" aria-label="Left Align">
               </div>
@@ -99,15 +177,15 @@ $(document).ready(function() {
         </h4>
         <button
           type="button"
-          class="close close-light"
+          class="close"
           data-dismiss="modal"
           aria-label="Close"
         >
-          <span aria-hidden="true">&times;</span>
+          <span class="close-light" aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <h2 class="text-center">Detail         <i id="${insurance.id}BookButton" onClick="bookmark('${insurance.id}')" class="fa fa-bookmark ${bookmarkClass}Button float-right"> </i></h2>
+        <h2 class="text-center">Detail         <i id="${insurance.id}BookButton" onClick="bookmark('${insurance.id}')" class="fa fa-bookmark ${bookmarkClass}Button bookmark-color-light float-right"> </i></h2>
 
         <table class="table table-bordered">
           <thead>
@@ -196,6 +274,7 @@ changeDarkTheme = dark => {
   const navBar = document.querySelector("#navBar");
   const container = document.querySelector("#container");
   if (dark) {
+    currentTheme = "dark";
     navBar.classList.remove("navbar-light");
     navBar.classList.add("navbar-dark");
 
@@ -232,7 +311,13 @@ changeDarkTheme = dark => {
     const closeButton = document.querySelectorAll(".close-light");
     for (let i = 0; i < closeButton.length; i++) {
       closeButton[i].classList.remove("close-light");
-      closeButton[i].classList.remove("close-dark");
+      closeButton[i].classList.add("close-dark");
+    }
+
+    const bookmark = document.querySelectorAll(".bookmark-color-light");
+    for (let i = 0; i < bookmark.length; i++) {
+      bookmark[i].classList.remove("bookmark-color-light");
+      bookmark[i].classList.add("bookmark-color-dark");
     }
 
     container.classList.remove("container-light");
@@ -269,7 +354,13 @@ changeDarkTheme = dark => {
     const closeButton = document.querySelectorAll(".close-dark");
     for (let i = 0; i < closeButton.length; i++) {
       closeButton[i].classList.remove("close-dark");
-      closeButton[i].classList.remove("close-light");
+      closeButton[i].classList.add("close-light");
+    }
+
+    const bookmark = document.querySelectorAll(".bookmark-color-dark");
+    for (let i = 0; i < bookmark.length; i++) {
+      bookmark[i].classList.remove("bookmark-color-dark");
+      bookmark[i].classList.add("bookmark-color-light");
     }
 
     const table = document.querySelectorAll(".table");

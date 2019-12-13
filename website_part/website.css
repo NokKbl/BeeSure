@@ -1,10 +1,9 @@
 html,
 body {
-  height: 100%;
+  height: auto;
 }
 
 .bg {
-  height: 100%;
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -47,25 +46,30 @@ body {
   opacity: 1;
 }
 
+.bookmark-color-light {
+  color: #ee5135;
+}
+
+.bookmark-color-dark {
+  color: #f18873;
+}
+
 .bookedStatus {
-  color: 242424;
+  opacity: 1;
 }
 
 .bookStatus {
-  color: black;
   opacity: 0.3;
 }
 
 .bookedButton {
-  color: #242424;
+  opacity: 1;
 }
 
 .bookButton {
-  color: black;
   opacity: 0.3;
 }
 
-.bookButton:hover {
-  color: #dfcc18;
+.bookButton-light:hover {
   opacity: 1;
 }
