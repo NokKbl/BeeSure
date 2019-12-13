@@ -17,7 +17,7 @@ body {
   color: black;
 }
 
-.card-dark {
+/* .card-dark {
   background-color: black;
   color: white;
 }
@@ -25,7 +25,7 @@ body {
 .card-light {
   background-color: white;
   color: black;
-}
+} */
 
 /* .half-opacity {
   opacity: 0.5;
@@ -35,8 +35,14 @@ body {
   opacity: 1;
 }
 
-.card:hover {
+.card-dark:hover {
   transform: scale(1.05, 1.05);
   box-shadow: 5px 5px 30px 15px rgba(255, 255, 255, 0.5),
     -5px -5px 30px 15px rgba(255, 255, 255, 0.5);
+}
+
+.card-light:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.5),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.5);
 }
