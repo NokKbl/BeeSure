@@ -1,6 +1,6 @@
 let bbody = [
-  ["Name A", 20],
-  ["Name B", 39],
+  ["TMB house insurance package 1", 20],
+  ["TMB house insurance package 2", 39],
   ["Name C", 93],
   ["Name D", 52],
   ["Name E", 27],
