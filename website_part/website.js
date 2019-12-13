@@ -20,7 +20,7 @@ const mockData = [
       "100,000",
       "ไม่เกิน 3,000 ต่อชิ้น <br />สูงสุด 30,000 ต่อปี",
       "สูงสุด 10,000 ต่อปี",
-      "100,000",
+      "-",
       "100,000",
       "100,000"
     ]
@@ -137,15 +137,15 @@ $(document).ready(function() {
       bookmarkClass = "book";
     }
 
-    cardContainer.innerHTML += `<div class="row m-auto" style="padding-top: 20px; padding-bottom: 20px;">
+    cardContainer.innerHTML += `<div class="row">
     <div class="col">
       <div
         id="${insurance.id}"
         class="card m-3 bg-light card-light"
         onClick="openInsuranceModal(this.id)"
       >
-        <div class="row no-gutters" style="padding: 20px;">
-          <div class="col-3">
+        <div class="row no-gutters">
+          <div class="col-3 px-3">
             <img src="../img/${insurance.img}" class="card-img" alt="..." />
           </div>
           <div class="col-9">
@@ -272,13 +272,12 @@ $(document).ready(function() {
 
 changeDarkTheme = dark => {
   const navBar = document.querySelector("#navBar");
-  const houseInsurance = document.querySelector("#houseInsurance");
   const container = document.querySelector("#container");
   if (dark) {
     currentTheme = "dark";
     navBar.classList.remove("navbar-light");
     navBar.classList.add("navbar-dark");
-    houseInsurance.classList.add("text-white");
+
     const bg = document.querySelectorAll(".bg-light");
     for (let i = 0; i < bg.length; i++) {
       bg[i].classList.remove("bg-light");
@@ -326,7 +325,6 @@ changeDarkTheme = dark => {
   } else {
     navBar.classList.remove("navbar-dark");
     navBar.classList.add("navbar-light");
-    houseInsurance.classList.remove("text-white");
 
     const outlineButton = document.querySelectorAll(".btn-outline-light");
     for (let i = 0; i < outlineButton.length; i++) {

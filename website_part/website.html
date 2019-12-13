@@ -49,29 +49,26 @@
         >
           THEME
         </button>
-        <div class="dropdown-menu">
+        <div
+          id="dropdown"
+          class="dropdown-menu dropdown-menu-right text-center"
+        >
           <a class="dropdown-item" onclick="changeDarkTheme(true)">Dark</a>
           <a class="dropdown-item" onclick="changeDarkTheme(false)">Light</a>
         </div>
       </div>
     </nav>
-    <div id="houseInsurance" class="row">
-      <div class="col-3 offset-1 bg-light my-5">
-        <div class="row">
-          <div class="col-1 align-middle">
-            <i class="fa fa-home w3-xxxlarge align-middle"></i>
-          </div>
-          <div class="col-11">
-            <div class="text-center ml-4 align-middle my-auto w3-xxlarge">
-              <strong>
-                House insurance
-              </strong>
-            </div>
+    <div id="container" class="container container-light half-opacity mt-5">
+      <div id="houseInsurance" class="row">
+        <div class="col-4 m-3 px-4">
+          <div class="row bg-light pl-3">
+            <i class="fa fa-home w3-xxxlarge"></i>
+            <strong class="w3-xxlarge">
+              House insurance
+            </strong>
           </div>
         </div>
       </div>
-    </div>
-    <div id="container" class="container container-light half-opacity">
       <div id="cardContainer"></div>
     </div>
 
