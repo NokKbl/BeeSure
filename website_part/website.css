@@ -1,6 +1,10 @@
 html,
 body {
   height: 100%;
+}
+
+.bg {
+  height: 100%;
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -29,4 +33,38 @@ body {
   transform: scale(1.05, 1.05);
   box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.5),
     -5px -5px 30px 15px rgba(0, 0, 0, 0.5);
+}
+
+.close-light {
+  color: black;
+  opacity: 1;
+}
+
+.close-dark {
+  color: white;
+  opacity: 1;
+}
+
+.bookedStatus {
+  color: palevioletred;
+}
+
+.bookStatus {
+  color: black;
+}
+
+.bookedButton {
+  color: palevioletred;
+}
+
+.bookButton {
+  color: black;
+}
+
+.bookedButton:hover {
+  color: black;
+}
+
+.bookButton:hover {
+  color: palevioletred;
 }

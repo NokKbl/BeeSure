@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="./website.css" type="text/css" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
@@ -13,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="bg">
     <nav id="navBar" class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">
         <img
@@ -52,75 +56,7 @@
     </nav>
     <div style="height: 15%; width:100%;"></div>
     <div id="container" class="container container-light half-opacity">
-      <div class="row m-auto">
-        <div class="col">
-          <div
-            id="tmb1Insurance"
-            class="card m-3 bg-light card-light"
-            onClick="openInsuranceModal(this.id)"
-          >
-            <div class="row no-gutters">
-              <div class="col-3">
-                <img src="../img/logo_tmb.png" class="card-img" alt="..." />
-              </div>
-              <div class="col-9">
-                <div class="card-body">
-                  <h4 class="card-title">TMB house insurance package 1</h4>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row m-auto">
-        <div class="col">
-          <div class="card m-3 bg-light card-light">
-            <div class="card-body">
-              <h4 class="card-title">D insurance</h4>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row m-auto">
-        <div class="col">
-          <div class="card m-3 bg-light card-light">
-            <div class="card-body">
-              <h4 class="card-title">G insurance</h4>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row m-auto">
-        <div class="col">
-          <div class="card m-3 bg-light card-light">
-            <div class="card-body">
-              <h4 class="card-title">G insurance</h4>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div id="cardContainer"></div>
     </div>
 
     <!-- Contact Modal -->
@@ -162,72 +98,8 @@
       </div>
     </div>
 
-    <!-- A insurance Modal -->
-    <div
-      class="modal fade"
-      id="tmb1InsuranceModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="tmb1InsuranceModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content bg-light">
-          <div class="modal-header ">
-            <h5 class="modal-title" id="tmb1InsuranceModalLabel">
-              TMB house Inurance package 1
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col">ความคุ้มครอง</th>
-                  <th scope="col">ทุนประกันภัย</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    1. อัคคีภัยและภัยเพิ่มเติม คุ้มครองไฟไหม้ ฟ้าผ่า ภัยระเบิด
-                    ภัยยวดยานพาหนะ ภัยอากาศยาน ภัยเนื่องจากน้ำ (ไม่รวมน้ำท่วม)
-                  </td>
-                  <td>1,000,000</td>
-                </tr>
-                <tr>
-                  <td>1.1 ต่อสิ่งปลูกสร้าง</td>
-                  <td>500,000</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">
-              <a
-                style="color:white;"
-                href="https://www.tmbbank.com/insurance/tmb-home-safe.html"
-                >เว็บผู้ให้บริการ</a
-              >
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="modalContainer"></div>
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
