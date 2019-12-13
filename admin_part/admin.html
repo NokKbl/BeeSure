@@ -25,22 +25,6 @@
     <div
       style="padding-top: 40px; padding-bottom: 50px; padding-left: 50px; padding-right: 50px; vertical-align: middle; text-align: center;"
     >
-      <div
-        style="background-color: rgba(240, 240, 240, 0.5); border-radius: 5px;"
-      >
-        <img
-          src="../img/logo.png"
-          width="200px"
-          height="100px"
-          class="d-inline-block align-top"
-          alt=""
-        />
-        <b
-          style="font-size: 70px; -webkit-text-stroke: 0.25px aliceblue; color:#242424;"
-          >BeeSure!</b
-        >
-      </div>
-      <br />
       <br />
       <div style="padding-left: 20px; padding-right: 20px;">
         <div
@@ -48,6 +32,9 @@
           style="padding: 40px; background-color: rgba(0, 0, 0, 0.2); border-radius: 5px;"
         >
           <div class="col-3">
+            <label style="text-align: left; font-size: 25px;"
+              ><b>Table of content</b></label
+            >
             <div
               class="nav flex-column nav-pills"
               id="v-pills-tab"
@@ -56,12 +43,23 @@
             >
               <a
                 class="nav-link active"
+                id="v-pills-home-tab"
+                data-toggle="pill"
+                href="#v-pills-home"
+                role="tab"
+                aria-controls="v-pills-home"
+                aria-selected="true"
+                >Home</a
+              >
+              <a
+                class="nav-link"
                 id="v-pills-bookmark-tab"
                 data-toggle="pill"
                 href="#v-pills-bookmark"
                 role="tab"
                 aria-controls="v-pills-bookmark"
                 aria-selected="true"
+                onclick="handleBookmarkTable()"
                 >Bookmark Record</a
               >
               <a
@@ -72,6 +70,7 @@
                 role="tab"
                 aria-controls="v-pills-issues"
                 aria-selected="false"
+                onclick="handleIssueTable()"
                 >Customer Issues</a
               >
             </div>
@@ -80,6 +79,49 @@
             <div class="tab-content" id="v-pills-tabContent">
               <div
                 class="tab-pane fade show active"
+                id="v-pills-home"
+                role="tabpanel"
+                aria-labelledby="v-pills-home-tab"
+              >
+                <div
+                  style="background-color: rgba(240, 240, 240, 0.5); border-radius: 5px; padding: 50px;"
+                >
+                  <b
+                    style="font-size: 50px; -webkit-text-stroke: 0.25px aliceblue; color:#242424;"
+                    >Welcome to ...</b
+                  >
+                  <br /><br />
+                  <img
+                    src="../img/logo.png"
+                    width="400px"
+                    height="200px"
+                    class="d-inline-block align-top"
+                    alt=""
+                  />
+                  <br />
+                  <b
+                    style="font-size: 70px; -webkit-text-stroke: 0.25px aliceblue; color:#242424;"
+                    >BeeSure!</b
+                  >
+                  <br /><br />
+                  <b
+                    style="font-size: 40px; -webkit-text-stroke: 0.25px aliceblue; color:#242424;"
+                    >Administration System</b
+                  >
+                  <br /><br /><br />
+                  <button
+                    type="button"
+                    id="signout"
+                    class="btn btn-danger btn-lg"
+                    style="width: 250px;"
+                    onclick="window.location.href='../home.html'"
+                  >
+                    Sign out
+                  </button>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
                 id="v-pills-bookmark"
                 role="tabpanel"
                 aria-labelledby="v-pills-bookmark-tab"
@@ -91,20 +133,7 @@
                       <th scope="col"># Bookmark</th>
                     </tr>
                   </thead>
-                  <tbody id="bbody">
-                    <tr>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>
+                  <tbody id="bbody"></tbody>
                 </table>
               </div>
               <div
@@ -119,17 +148,7 @@
                       <th scope="col">Customer issues</th>
                     </tr>
                   </thead>
-                  <tbody id="ibody">
-                    <tr>
-                      <td>Otto</td>
-                    </tr>
-                    <tr>
-                      <td>Thornton</td>
-                    </tr>
-                    <tr>
-                      <td>the Bird</td>
-                    </tr>
-                  </tbody>
+                  <tbody id="ibody"></tbody>
                 </table>
               </div>
             </div>
