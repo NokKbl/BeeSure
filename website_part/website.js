@@ -59,14 +59,14 @@ $(document).ready(function() {
       bookmarkClass = "book";
     }
 
-    cardContainer.innerHTML += `<div class="row m-auto">
+    cardContainer.innerHTML += `<div class="row m-auto" style="padding-top: 20px; padding-bottom: 20px;">
     <div class="col">
       <div
         id="${insurance.id}"
         class="card m-3 bg-light card-light"
         onClick="openInsuranceModal(this.id)"
       >
-        <div class="row no-gutters">
+        <div class="row no-gutters" style="padding: 20px;">
           <div class="col-3">
             <img src="../img/${insurance.img}" class="card-img" alt="..." />
           </div>
