@@ -272,12 +272,13 @@ $(document).ready(function() {
 
 changeDarkTheme = dark => {
   const navBar = document.querySelector("#navBar");
+  const houseInsurance = document.querySelector("#houseInsurance");
   const container = document.querySelector("#container");
   if (dark) {
     currentTheme = "dark";
     navBar.classList.remove("navbar-light");
     navBar.classList.add("navbar-dark");
-
+    houseInsurance.classList.add("text-white");
     const bg = document.querySelectorAll(".bg-light");
     for (let i = 0; i < bg.length; i++) {
       bg[i].classList.remove("bg-light");
@@ -325,6 +326,7 @@ changeDarkTheme = dark => {
   } else {
     navBar.classList.remove("navbar-dark");
     navBar.classList.add("navbar-light");
+    houseInsurance.classList.remove("text-white");
 
     const outlineButton = document.querySelectorAll(".btn-outline-light");
     for (let i = 0; i < outlineButton.length; i++) {
