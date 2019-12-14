@@ -2,10 +2,9 @@
 A website to get the information and compare the insurance that you're interested in.
 
 ## Information for demo
-**Email and password for user login**
-* Email: user123@email.com
-* Password: user123
+**Demo email and password**
 
-**Email and password for admin login**
-* Email: admin@beesure.com
-* Password: beesure1312
+| For | Email | Password |
+|----|----|----|
+| User login | user123@email.com | user123 |
+| Admin login | admin@beesure.com | beesure1312 |
