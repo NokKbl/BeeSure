@@ -26,22 +26,24 @@ const mockData = [
     ]
   },
   {
-    title: "TMB house insurance package 2",
-    img: "logo_tmb.png",
-    id: "tmb2Insurance",
-    webUrl: "https://www.tmbbank.com/insurance/tmb-home-safe.html",
-    insurancePremiumPerYear: "2,499",
+    title: "KBTG house insurance - Elite 1",
+    img: "logo_KBTG.png",
+    id: "",
+    webUrl: "https://kasikornbank.com/fire-insurance",
+    insurancePremiumPerYear: "call hotline",
     insurancePolicy: [
-      "500,000",
-      "ไม่คุ้มครอง",
-      "500,000",
-      "100,000",
-      "100,000",
-      "ไม่เกิน 3,000 ต่อชิ้น <br />สูงสุด 30,000 ต่อปี",
-      "สูงสุด 10,000 ต่อปี",
-      "100,000",
-      "100,000",
-      "100,000"
+      "Covered by actual damage, Not exceeding Sum Insured",
+      "Not exceeding 10% of Sum Insured, Limit in aggregate 200,000",
+      "Not exceeding 10% of Sum Insured, Limit in aggregate 200,000",
+      "1000 per day, Limit in aggregate 50,000",
+      "Not exceeding 10% of Sum Insured, Limit in aggregate 100,000",
+      "Limit in aggregate 50,000",
+      "Limit in aggregate 20,000",
+      "Not exceeding 10% of Sum Insured, Limit in aggregate",
+      "Not exceeding 10% of Sum Insured, Limit in aggregate 50,000",
+      "Not exceeding 10% of Sum Insured, Limit in aggregate 100,000",
+      "Limit in aggregate 20,000",
+      "-"
     ]
   },
   {
@@ -144,7 +146,7 @@ $(document).ready(function() {
         class="card m-3 bg-light card-light"
         onClick="openInsuranceModal(this.id)"
       >
-        <div class="row no-gutters">
+        <div class="row no-gutters my-5">
           <div class="col-3 px-3">
             <img src="../img/${insurance.img}" class="card-img" alt="..." />
           </div>
