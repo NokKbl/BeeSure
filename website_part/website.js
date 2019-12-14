@@ -1,14 +1,14 @@
+let currentTheme = "light";
+
 let mockUser = {
   id: "Hello 1234",
   bookmark: ["tmb1Insurance"]
 };
 
-let currentTheme = "light";
-
 const mockData = [
   {
     title: "KBTG house insurance - Elite 1",
-    img: "logo_tmb.png",
+    img: "logo_KBTG.png",
     id: "tmb1Insurance",
     webUrl: "https://kasikornbank.com/fire-insurance",
     insurancePremiumPerYear: "call hotline",
@@ -385,7 +385,7 @@ const mockData = [
   },
   {
     title: "KTB house insurance - Prakanphai Ban Manchai Elite 4",
-    img: "logo_tmb.png",
+    img: "logo_KBTG.png",
     id: "tmb1Insurance",
     webUrl: "https://www.ktb.co.th/th/personal/insurance/non-life-insurance/3",
     insurancePremiumPerYear: "3,500",
@@ -481,7 +481,7 @@ $(document).ready(function() {
         class="card m-3 bg-light card-light"
         onClick="openInsuranceModal(this.id)"
       >
-        <div class="row no-gutters">
+        <div class="row no-gutters my-5">
           <div class="col-3 px-3">
             <img src="../img/${insurance.img}" class="card-img" alt="..." />
           </div>
@@ -582,6 +582,14 @@ $(document).ready(function() {
               <td>12. ${insurance.insurancePolicy.liability.details}</td>
               <td class="text-center">${insurance.insurancePolicy.liability.limits}</td>
             </tr>
+            <tr>
+            <td>11. Damage of premises by Burglary or Robbery such as door, window</td>
+            <td class="text-center">${insurance.insurancePolicy[8]}</td>
+          </tr>
+          <tr>
+          <td>12. Public Liability Insurance, Personal Liability, Personal Medical</td>
+          <td class="text-center">${insurance.insurancePolicy[8]}</td>
+        </tr>
           </tbody>
         </table>
       </div>
@@ -604,6 +612,10 @@ $(document).ready(function() {
     </div>
   </div>
 </div>`;
+  }
+  const theme = window.location.href.split("=")[1];
+  if (theme === "dark") {
+    changeDarkTheme(true);
   }
 });
 
