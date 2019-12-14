@@ -199,52 +199,58 @@ $(document).ready(function() {
           <tbody>
             <tr>
               <td>
-                1. อัคคีภัยและภัยเพิ่มเติม คุ้มครองไฟไหม้ ฟ้าผ่า ภัยระเบิด
-                ภัยยวดยานพาหนะ ภัยอากาศยาน ภัยเนื่องจากน้ำ (ไม่รวมน้ำท่วม)
+                1. All Risk Such as Fire, Lightning,Water Damage, etc. excluding Flood
               </td>
               <td class="text-center">${insurance.insurancePolicy[0]}</td>
             </tr>
             <tr>
-              <td>1.1 คุ้มครองความเสียหายต่อสิ่งปลูกสร้าง</td>
+              <td>2. Flood</td>
               <td class="text-center">${insurance.insurancePolicy[1]}</td>
             </tr>
             <tr>
-              <td>1.2 คุ้มครองความเสียหายต่อทรัพย์สินในอาคาร</td>
+              <td>3. Electrical Injury</td>
               <td class="text-center">${insurance.insurancePolicy[2]}</td>
             </tr>
             <tr>
               <td>
-                2. คุ้มครอง 4 ภัยธรรมชาติ (น้ำท่วม แผ่นดินไหว ลมพายุ
-                ลูกเห็บ)
+                4. Temporary Accommodation Expenses
               </td>
               <td class="text-center">${insurance.insurancePolicy[3]}</td>
             </tr>
             <tr>
-              <td>3. โจรกรรม</td>
+              <td>5. Fire Extinguishing Expenses</td>
               <td class="text-center">${insurance.insurancePolicy[4]}</td>
             </tr>
             <tr>
-              <td>3.1 คุ้มครองทรัพย์สินที่พกติดตัวได้ทุกชนิด</td>
+              <td>6. Antiques and Paintings</td>
               <td class="text-center">
               ${insurance.insurancePolicy[5]}
               </td>
             </tr>
             <tr>
-              <td>3.2 ความเสียหายต่อโบราณวัตถุ</td>
+              <td>7. Damage of Personal Belongings.</td>
               <td class="text-center">${insurance.insurancePolicy[6]}</td>
             </tr>
             <tr>
-              <td>4. ความเสียหายต่อเครื่องใช้ไฟฟ้า</td>
+              <td>8. Windstorm / Earthquake / Volcano eruption / Undercurrent / Tsunami / Hail</td>
               <td class="text-center">${insurance.insurancePolicy[7]}</td>
             </tr>
             <tr>
-              <td>5. ความรับผิดชอบต่อบุคคลภายนอก</td>
+              <td>9. Plate Glass Insurance</td>
               <td class="text-center">${insurance.insurancePolicy[8]}</td>
             </tr>
             <tr>
-              <td>6. การเสียชีวิตของผู้เอาประกันภัย</td>
+              <td>10. Loss of Jewelry and Watch due to Burglary, Robbery, and Gang Robbery with in premise and outside premise while traveling within Thailand</td>
               <td class="text-center">${insurance.insurancePolicy[9]}</td>
             </tr>
+            <tr>
+            <td>11. Damage of premises by Burglary or Robbery such as door, window</td>
+            <td class="text-center">${insurance.insurancePolicy[8]}</td>
+          </tr>
+          <tr>
+          <td>12. Public Liability Insurance, Personal Liability, Personal Medical</td>
+          <td class="text-center">${insurance.insurancePolicy[8]}</td>
+        </tr>
           </tbody>
         </table>
       </div>
