@@ -1,9 +1,9 @@
+let currentTheme = "light";
+
 let mockUser = {
   id: "Hello 1234",
   bookmark: ["tmb1Insurance"]
 };
-
-let currentTheme = "light";
 
 const mockData = [
   {
@@ -267,6 +267,10 @@ $(document).ready(function() {
     </div>
   </div>
 </div>`;
+  }
+  const theme = window.location.href.split("=")[1];
+  if (theme === "dark") {
+    changeDarkTheme(true);
   }
 });
 
