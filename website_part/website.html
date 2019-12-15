@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./website.css" type="text/css" />
+    <link rel="stylesheet" href="./slide-range.css" type="text/css" />
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
     <link
       rel="stylesheet"
@@ -20,7 +21,7 @@
   </head>
   <body class="bg">
     <nav id="navBar" class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" onClick="backToHome()">
         <img
           src="../img/logo.png"
           width="70"
@@ -56,6 +57,13 @@
           <a class="dropdown-item" onclick="changeDarkTheme(true)">Dark</a>
           <a class="dropdown-item" onclick="changeDarkTheme(false)">Light</a>
         </div>
+        <button
+          type="button"
+          class="btn btn-outline-dark"
+          onclick="logout()"
+        >
+          Logout
+        </button>
       </div>
     </nav>
     <div id="container" class="container container-light half-opacity mt-5">
@@ -66,6 +74,24 @@
             <strong class="w3-xxlarge">
               House insurance
             </strong>
+          </div>
+        </div>
+
+        <div class="col-2 m-4 px-4">
+          <div class="bg-light">
+            <button
+              id="filterButton"
+              type="button"
+              style="width: 100%"
+              class="btn btn-outline-dark"
+              data-toggle="modal"
+              data-target="#filterModal"
+            >
+              <i class="fa fa-filter w3-xxxsmall"></i>
+              <strong class="w3-xxxsmall">
+                Filter
+              </strong>
+            </button>
           </div>
         </div>
       </div>
@@ -117,6 +143,117 @@
       </div>
     </div>
 
+    <!-- Filter Modal -->
+    <div
+      class="modal fade"
+      id="filterModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="filterModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-light">
+          <div class="modal-header">
+            <h5 class="modal-title" id="filterModalLabel">Filter</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span class="close-light" aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label>Flood (Baht)</label> <br />
+              <div class="container slide-range">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div id="slider-range"></div>
+                  </div>
+                </div>
+                  <div class="col-xs-6 caption first-caption">
+                    <strong>Min:</strong> <span id="slider-range-value1"></span>
+                  </div>
+                  <div class="col-xs-6 caption"">
+                    <strong>Max:</strong> <span id="slider-range-value2"></span>
+                  </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <form>
+                      <input type="hidden" id="min-value" value="" />
+                      <input type="hidden" id="max-value" value="" />
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <br />
+
+              <label>Antiques and Paintings (Baht)</label> <br />
+              <div class="container slide-range-2">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div id="slider-range-2"></div>
+                    </div>
+                  </div>
+                    <div class="col-xs-6 caption first-caption">
+                      <strong>Min:</strong> <span id="slider-range-2-value1"></span>
+                    </div>
+                    <div class="col-xs-6 caption"">
+                      <strong>Max:</strong> <span id="slider-range-2-value2"></span>
+                    </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <form>
+                        <input type="hidden" id="min-value-2" value="" />
+                        <input type="hidden" id="max-value-2" value="" />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <br />
+
+                <!-- <label>All risk such as fire, water damage (Baht)</label> <br />
+                <div class="container slide-range-3">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div id="slider-range-3"></div>
+                      </div>
+                    </div>
+                      <div class="col-xs-6 caption first-caption">
+                        <strong>Min:</strong> <span id="slider-range-3-value1"></span>
+                      </div>
+                      <div class="col-xs-6 caption"">
+                        <strong>Max:</strong> <span id="slider-range-3-value2"></span>
+                      </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <form>
+                          <input type="hidden" id="min-value-3" value="" />
+                          <input type="hidden" id="max-value-3" value="" />
+                        </form>
+                      </div>
+                    </div>
+                  </div> -->
+
+            </div>
+            <div class="modal-footer">
+              <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+              >
+              Close
+            </button>
+            <button type="submit" class="btn btn-primary" id="submitFilter" data-dismiss="modal">Submit</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+
     <div id="modalContainer"></div>
 
     <script
@@ -135,5 +272,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./website.js"></script>
+    <script src="./slide-rang.js"></script>
   </body>
 </html>

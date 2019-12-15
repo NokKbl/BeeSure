@@ -1,5 +1,15 @@
 let currentTheme = "light";
 
+$(document).ready(() => {
+  let currentUrl = window.location.href;
+  if (currentUrl.includes("=")) {
+    const theme = window.location.href.split("=")[1];
+    if (theme === "dark") {
+      changeDarkTheme(true);
+    }
+  }
+});
+
 changeDarkTheme = dark => {
   const navBar = document.querySelector("#navBar");
   const container = document.querySelector("#container");

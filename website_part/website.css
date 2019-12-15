@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
   height: auto;
 }
 
@@ -10,7 +9,7 @@ body {
   background-size: cover;
 }
 
-.dropdown-menu > a:hover {
+.dropdown-menu>a:hover {
   color: black;
 }
 
@@ -29,15 +28,13 @@ body {
 .card-dark:hover {
   cursor: pointer;
   transform: scale(1.05, 1.05);
-  box-shadow: 5px 5px 30px 15px rgba(255, 255, 255, 0.5),
-    -5px -5px 30px 15px rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 30px 15px rgba(255, 255, 255, 0.5), -5px -5px 30px 15px rgba(255, 255, 255, 0.5);
 }
 
 .card-light:hover {
   cursor: pointer;
   transform: scale(1.05, 1.05);
-  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.5),
-    -5px -5px 30px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.5), -5px -5px 30px 15px rgba(0, 0, 0, 0.5);
 }
 
 .close-light {
@@ -88,6 +85,7 @@ body {
 .select-button-light {
   border: thick double black;
 }
+
 .select-button-dark {
   border: thick double white;
 }
