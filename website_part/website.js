@@ -192,8 +192,8 @@ $(document).ready(function() {
         <table class="table table-bordered">
           <thead>
             <tr>
-              <th style="width:75%">ความคุ้มครอง</th>
-              <th class="text-center" style="width:25%">
+              <th style="width:70%">ความคุ้มครอง</th>
+              <th class="text-center" style="width:30%;">
                 ทุนประกันภัย<br />(บาท)
               </th>
             </tr>
