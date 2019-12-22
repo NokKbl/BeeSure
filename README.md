@@ -1,27 +1,29 @@
 # BeeSure
 
+![logo](img/logo.png)
+
 A website to get the information of the insurance that you're interested in.
 
 ## Features
 
-#### User
+#### User:
 
-- Feature 1: Register
-- Feature 2: Login
-- Feature 3: Forgot Password
+- **Feature 1:** Register
+- **Feature 2:** Login
+- **Feature 3:** Forgot Password
 
-#### Website
+#### Website:
 
-- Feature 4: Show Insurance Details
-- Feature 5: Filter Insurance
-- Feature 6: Bookmark Insurance
-- Feature 7: System Support
-- Feature 8: Change Website Theme
+- **Feature 4:** Show Insurance Details
+- **Feature 5:** Filter Insurance
+- **Feature 6:** Bookmark Insurance
+- **Feature 7:** System Support
+- **Feature 8:** Change Website Theme
 
-#### Admin
+#### Admin:
 
-- Feature 9: Show Bookmark Record
-- Feature 10: Show Issues Record
+- **Feature 9:** Show Bookmark Record
+- **Feature 10:** Show Issues Record
 
 ## To play our demo web
 
@@ -40,41 +42,53 @@ A website to get the information of the insurance that you're interested in.
 
 ## Preview
 
-1. Homepage
-   ![home](preview/1.jpg)
+**1. Homepage**
 
-2. Register
-   ![register](preview/2.jpg)
+![home](preview/1.jpg)
 
-3. Login
-   ![login](preview/3.jpg)
+**2. Register**
 
-4. Forgot password
-   ![forgot](preview/4.jpg)
+![register](preview/2.jpg)
 
-5. Insurance types
-   ![in_type](preview/5.jpg)
+**3. Login**
 
-6. Contact us
-   ![contact](preview/6.jpg)
+![login](preview/3.jpg)
 
-7. Insurances
-   ![choice](preview/7.jpg)
+**4. Forgot password**
 
-8. Filter
-   ![filter](preview/8.jpg)
+![forgot](preview/4.jpg)
 
-9. Insurance details
-   ![details](preview/9.jpg)
+**5. Insurance types**
 
-10. Admin homepage
-    ![choice](preview/10.jpg)
+![in_type](preview/5.jpg)
 
-11. Show bookmark record
-    ![filter](preview/11.jpg)
+**6. Contact us**
 
-12. Show issues
-    ![details](preview/12.jpg)
+![contact](preview/6.jpg)
+
+**7. Insurances**
+
+![choice](preview/7.jpg)
+
+**8. Filter**
+
+![filter](preview/8.jpg)
+
+**9. Insurance details**
+
+![details](preview/9.jpg)
+
+**10. Admin homepage**
+
+    ![adho](preview/10.jpg)
+
+**11. Show bookmark record**
+
+    ![rec](preview/11.jpg)
+
+**12. Show issues**
+
+    ![issue](preview/12.jpg)
 
 ## Members
 
