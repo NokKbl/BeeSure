@@ -1,8 +1,8 @@
 # BeeSure
 
-![logo](img/logo.png)
-
 A website to get the information of the insurance that you're interested in.
+
+![logo](img/logo.png)
 
 ## Features
 
