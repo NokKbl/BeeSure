@@ -80,15 +80,15 @@ A website to get the information of the insurance that you're interested in.
 
 **10. Admin homepage**
 
-    ![adho](preview/10.jpg)
+![adho](preview/10.jpg)
 
 **11. Show bookmark record**
 
-    ![rec](preview/11.jpg)
+![rec](preview/11.jpg)
 
 **12. Show issues**
 
-    ![issue](preview/12.jpg)
+![issue](preview/12.jpg)
 
 ## Members
 
