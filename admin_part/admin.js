@@ -1,12 +1,12 @@
 let bbody = [
   ["TMB house insurance package 1", 20],
   ["TMB house insurance package 2", 39],
-  ["Name C", 93],
-  ["Name D", 52],
-  ["Name E", 27],
-  ["Name F", 53],
-  ["Name G", 64],
-  ["Name H", 75]
+  ["KBTG house insurance - Elite 1", 93],
+  ["Frank house insurance", 52],
+  ["Elite house insurance - Elite 1", 27],
+  ["Bangkok house insurance - RakBaanForOwner", 53],
+  ["Bangkok Bank house insurance - Elite 1", 64],
+  ["KTB house insurance - Prakanphai Ban Manchai Elite 4", 75]
 ];
 let ibody = [
   "Can't go to see details of the insurance!",
